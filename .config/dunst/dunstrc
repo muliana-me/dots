@@ -1,0 +1,9 @@
+[global]
+	font = FiraCode-Light 10
+	foreground = "#e4e4e4"
+	background = "#1e1e1e"
+	frame_color = "#b3b3b3"
+	frame_width = 1
+	offset = 5x25
+	width = 350
+	height = (0, 350)
