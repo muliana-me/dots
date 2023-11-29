@@ -6,12 +6,12 @@ update_wallpaper() { feh --bg-fill ~/pictures/silent_mountains_5k.jpg; }
 if [ "$current_resolution" = "1280x720" ]; then
     xrandr --output eDP-1 --mode 1920x1080
     update_wallpaper
-    notify-send "Screen" "Resolution changed to 1920x1080."
+    echo "Screen resolution changed to 1920x1080."
 elif [ "$current_resolution" = "1920x1080" ]; then
     xrandr --output eDP-1 --mode 1280x720
     update_wallpaper
-    notify-send "Screen" "Resolution changed to 1280x720."
+    echo "Screen resolution changed to 1280x720."
 else
-    notify-send "Screen" "No resolution change needed."
+    echo "No screen resolution change needed."
 fi
 
